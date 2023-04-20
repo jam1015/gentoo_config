@@ -1,0 +1,24 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+VIDEO_CARDS="intel i965 nvidia"
+#PORTAGE_NICENESS=1
+USE="x networkmanager -gnome -kde -ios -ipod -quicktime x wayland alsa"
+FEATURES="parallel-install"
+ACCEPT_LICENSE="*"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+
+MAKEOPTS="--jobs 2 --load-average 4"
+EMERGE_DEFAULT_OPTS="--jobs 2 --load-average 1.8"
+LC_MESSAGES=C
+GRUB_PLATFORM="efi-64"

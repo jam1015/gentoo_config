@@ -1,0 +1,4 @@
+sys-firmware/intel-microcode initramfs
+# required by sys-boot/os-prober-1.81::gentoo
+# required by sys-boot/os-prober (argument)
+>=sys-boot/grub-2.06-r6 mount
